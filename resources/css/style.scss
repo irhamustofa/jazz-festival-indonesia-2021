@@ -156,10 +156,15 @@ section#lineup {
             padding-bottom: 20px;
             height: 100%;
             text-align: center;
+            filter: grayscale(1);
 
             // Medium devices (tablets, 768px and up)
             @media (min-width: 768px) {
                 padding-top: 700px;
+            }
+
+            &:hover {
+                filter: none;
             }
     
             &.lineup-day-1 {

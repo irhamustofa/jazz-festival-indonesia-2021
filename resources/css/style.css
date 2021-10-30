@@ -149,12 +149,19 @@ section#lineup .container .lineup-card {
   padding-bottom: 20px;
   height: 100%;
   text-align: center;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 @media (min-width: 768px) {
   section#lineup .container .lineup-card {
     padding-top: 700px;
   }
+}
+
+section#lineup .container .lineup-card:hover {
+  -webkit-filter: none;
+          filter: none;
 }
 
 section#lineup .container .lineup-card.lineup-day-1 {
