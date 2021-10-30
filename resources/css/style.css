@@ -1,0 +1,236 @@
+body, html {
+  font-family: 'Philosopher', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Serif Display', serif;
+}
+
+.btn-round {
+  border: transparent;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+
+.btn-round.btn-primary {
+  background-color: #ee9e26 !important;
+  color: black;
+}
+
+.btn-round.btn-secondary {
+  background-color: #969696;
+  color: white;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .navbar .container {
+    max-width: 690px;
+  }
+}
+
+.navbar .container .navbar-nav .nav-link {
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+
+.section-title {
+  font-size: 50px;
+}
+
+section#header {
+  padding: 160px 0;
+  background-image: url("../images/header-bg.png");
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+section#header .main-logo {
+  width: 80%;
+  margin-bottom: 70px;
+}
+
+section#header .hero-container {
+  margin-right: 20px;
+}
+
+section#header .hero-container img {
+  width: 100%;
+}
+
+section#header .content-container h1 {
+  font-size: 70px;
+  line-height: 1em;
+}
+
+section#header .content-container p {
+  font-size: 25px;
+  color: #dddddd;
+}
+
+section#header .content-container .cta-button {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 35px;
+  border-radius: 25px;
+  letter-spacing: .1rem;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#fcff9e), to(#c67700));
+  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+}
+
+section#header .content-container .cta-button:hover {
+  box-shadow: 1px 2px 67px 12px rgba(200, 230, 83, 0.75);
+  -webkit-box-shadow: 1px 2px 67px 12px rgba(200, 230, 83, 0.75);
+  -moz-box-shadow: 1px 2px 67px 12px rgba(200, 230, 83, 0.75);
+}
+
+section#ticket {
+  padding: 100px 0;
+  background-image: url("../images/white-bg-1.png");
+}
+
+section#ticket .pricing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section#ticket .pricing-container .pricing-item {
+  padding: 10px 20px;
+}
+
+section#ticket .payment-img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+section#ticket .payment-img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+section#lineup {
+  padding: 100px 0;
+  background-image: url("../images/gradient-bg-1.png");
+  background-size: cover;
+}
+
+section#lineup .container {
+  margin-bottom: -350px;
+}
+
+section#lineup .container .section-title {
+  color: white;
+}
+
+section#lineup .container .lineup-card {
+  border: none;
+  padding-top: 500px;
+  color: white;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  section#lineup .container .lineup-card {
+    padding-top: 700px;
+  }
+}
+
+section#lineup .container .lineup-card.lineup-day-1 {
+  background-image: url("../images/lineup/day-1.jpg");
+}
+
+section#lineup .container .lineup-card.lineup-day-2 {
+  background-image: url("../images/lineup/day-2.jpg");
+}
+
+section#lineup .container .lineup-card.lineup-day-3 {
+  background-image: url("../images/lineup/day-3.jpg");
+}
+
+section#gallery {
+  padding: 400px 0 200px;
+  background-image: url("../images/white-bg-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section#gallery .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  section#gallery .video-container {
+    height: 100%;
+  }
+}
+
+section#gallery .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section#gallery img {
+  width: 100%;
+}
+
+section#contact {
+  padding: 150px 0 0;
+  background-image: url("../images/header-bg.png");
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+}
+
+section#contact .main-logo {
+  width: 30%;
+}
+
+section#contact .social {
+  font-size: 20px;
+}
+
+section#contact .social .social-item .item-title {
+  color: #dfdfdf;
+}
+
+section#contact .social .social-item .item-link {
+  color: white !important;
+}
+
+section#contact .copyright-container {
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 100px;
+  padding: 20px 0;
+  color: black;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+/*# sourceMappingURL=style.css.map */
