@@ -6,18 +6,31 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Serif Display', serif;
 }
 
+.btn {
+  border: none;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
 .btn-round {
   border: transparent;
   border-radius: 30px;
   padding: 5px 20px;
 }
 
-.btn-round.btn-primary {
+.btn-primary {
   background-color: #ee9e26 !important;
   color: black;
 }
 
-.btn-round.btn-secondary {
+.btn-secondary {
   background-color: #969696;
   color: white;
 }
@@ -239,5 +252,63 @@ section#contact .copyright-container {
   color: black;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+}
+
+section#registration {
+  padding: 100px 0;
+}
+
+section#registration .ticket-category-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section#registration .ticket-category-container .ticket-category-item.category-full-pass .card {
+  background-image: url("../images/gradient-bg-1.png");
+}
+
+section#registration .ticket-category-container .ticket-category-item.category-daily-pass .card {
+  background-image: url("../images/header-bg.png");
+}
+
+section#registration .ticket-category-container .ticket-category-item input {
+  display: none;
+}
+
+section#registration .ticket-category-container .ticket-category-item input:checked ~ label .card,
+section#registration .ticket-category-container .ticket-category-item input:hover ~ label .card,
+section#registration .ticket-category-container .ticket-category-item input:active ~ label .card {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+section#registration .ticket-category-container .ticket-category-item input:checked ~ label .card {
+  -webkit-box-shadow: 0px 0px 0px 4px #7338D5;
+          box-shadow: 0px 0px 0px 4px #7338D5;
+}
+
+section#registration .ticket-category-container .ticket-category-item .card {
+  color: white;
+  background-size: 200%;
+  background-position: center;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: .4;
+  margin-right: 1.5rem;
+  width: 250px;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  height: 200px;
+}
+
+section#registration .ticket-category-container .ticket-category-item .card:hover, section#registration .ticket-category-container .ticket-category-item .card:active {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+section#registration .ticket-total-container .btn-operation {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,19 +7,29 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'DM Serif Display', serif;
 }
 
+.btn {
+    border: none;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
 .btn-round {
     border: transparent;
     border-radius: 30px;
     padding: 5px 20px;
-
-    &.btn-primary {
-        background-color: #ee9e26 !important;
-        color: black;
-    }
-    &.btn-secondary {
-        background-color: #969696;
-        color: white;
-    }
+}
+.btn-primary {
+    background-color: #ee9e26 !important;
+    color: black;
+}
+.btn-secondary {
+    background-color: #969696;
+    color: white;
 }
 
 .navbar {
@@ -244,5 +254,62 @@ section#contact {
         padding: 20px 0;
         color: black;
         backdrop-filter: blur(10px);
+    }
+}
+
+section#registration {
+    padding: 100px 0;
+
+    .ticket-category-container {
+        display: flex;
+
+        .ticket-category-item {
+
+            &.category-full-pass .card {
+                background-image: url('../images/gradient-bg-1.png');
+            }
+            &.category-daily-pass .card {
+                background-image: url('../images/header-bg.png');
+            }
+            
+            input {
+                display: none;
+
+                &:checked ~ label .card,
+                &:hover ~ label .card,
+                &:active ~ label .card {
+                    opacity: 1;
+                    filter: grayscale(0);
+                }
+
+                &:checked ~ label .card {
+                    box-shadow: 0px 0px 0px 4px #7338D5;
+                }
+                
+            }
+            
+            .card {
+                color: white;
+                background-size: 200%;
+                background-position: center;
+                filter: grayscale(1);
+                opacity: .4;
+                margin-right: 1.5rem;
+                width: 250px;
+                transition: all .1s ease-out;
+                height: 200px;
+
+                &:hover,
+                &:active {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+
+    .ticket-total-container {
+        .btn-operation {
+            color: white;
+        }
     }
 }
