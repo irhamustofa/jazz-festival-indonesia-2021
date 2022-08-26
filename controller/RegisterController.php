@@ -13,7 +13,7 @@ $registration->email = isset($_POST['email']) ? $_POST['email'] : die();
 $registration->address = isset($_POST['address']) ? $_POST['address'] : die();
 $registration->category = isset($_POST['category']) ? $_POST['category'] : die();
 $registration->ticket_total = isset($_POST['ticket_total']) ? $_POST['ticket_total'] : die();
-$registration->total_price = isset($_POST['total_price']) ? $_POST['total_price'] : die();
+$registration->price_total = isset($_POST['total_price']) ? $_POST['total_price'] : die();
 
 $result = $registration->register();
 
@@ -23,16 +23,20 @@ if (!$result) {
 
 $data = [];
 $data['name'] = $registration->name;
-$data['email'] = $registration->name;
-$data['address'] = $registration->name;
-$data['category'] = $registration->name;
+$data['email'] = $registration->email;
+$data['address'] = $registration->address;
+$data['category'] = $registration->category;
 
-$data['category'] = str_replace("_", " ", $data['category']);
+$data['category'] = str_replace("-", " ", $data['category']);
 $data['category'] = ucwords($data['category']);
 
-$data['ticket_total'] = $registration->name;
-$data['total_price'] = $registration->name;
+$data['ticket_total'] = $registration->ticket_total;
+$data['total_price'] = $registration->price_total;
+
+$data['invoice_number'] = rand(pow(10, 18-1), pow(10, 18)-1);
+
+$data['barcode_image_url'] = 'https://barcode.tec-it.com/barcode.ashx?data='. urlencode($data['invoice_number']) .'&code=Code128&translate-esc=true&dmsize=Default';
 
 $_SESSION['data'] = $data;
 
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: ../thank-you.php');

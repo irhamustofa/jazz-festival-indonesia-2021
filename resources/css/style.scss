@@ -307,9 +307,46 @@ section#registration {
         }
     }
 
-    .ticket-total-container {
-        .btn-operation {
+    .payment-img {
+        filter: grayscale(1);
+
+        &:hover {
+            filter: none;
+        }
+    }
+}
+
+section#invoice {
+    margin-top: -120px;
+    margin-bottom: 100px;
+
+    .ticket-card {
+        flex-direction: row;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .card-body {
+            padding: 50px;
+            flex: none;
+            width: 70%;
+
+            .barcode-container {
+                border-top: 2px dashed #d6d6d6;
+                padding-top: 50px;
+            }
+        }
+
+        .card-graphic {
+            width: 30%;
+            padding: 50px;
+            background-image: url('../images/gradient-bg-1.png');
+            background-size: 250%;
+            background-position: center;
             color: white;
+
+            h1 {
+                font-size: 80px;
+            }
         }
     }
 }

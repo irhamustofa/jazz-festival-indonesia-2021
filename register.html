@@ -200,12 +200,13 @@
                             <div class="form-group pt-4">
                                 <label for="total-price">Total Price</label>
                                 <h2 id="overview-total-price">0,00</h2>
-
+                                
                                 <input type="hidden" name="total_price">
                             </div>
-
+                            
                             <div class="form-group my-3">
                                 <button class="btn btn-round btn-primary text-light">Register</button>
+                                <img src="resources/images/payments.png" alt="Jazz Festival 2021 Payments" class="payment-img d-block mt-3" width="200">
                             </div>
                         </div>
                     </div>
@@ -225,7 +226,7 @@
                 name: document.querySelector('[name="name"]').value,
                 email: document.querySelector('[name="email"]').value,
                 address: document.querySelector('[name="address"]').value,
-                category: document.querySelector('[name="category"]:checked').value,
+                category: document.querySelector('[name="category"]:checked')?.value,
                 ticketTotal: document.querySelector('[name="ticket_total"]').value,
             }
 

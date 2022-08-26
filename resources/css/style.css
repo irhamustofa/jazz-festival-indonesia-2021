@@ -308,7 +308,53 @@ section#registration .ticket-category-container .ticket-category-item .card:hove
           transform: translateY(-10px);
 }
 
-section#registration .ticket-total-container .btn-operation {
+section#registration .payment-img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+section#registration .payment-img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+section#invoice {
+  margin-top: -120px;
+  margin-bottom: 100px;
+}
+
+section#invoice .ticket-card {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+section#invoice .ticket-card .card-body {
+  padding: 50px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 70%;
+}
+
+section#invoice .ticket-card .card-body .barcode-container {
+  border-top: 2px dashed #d6d6d6;
+  padding-top: 50px;
+}
+
+section#invoice .ticket-card .card-graphic {
+  width: 30%;
+  padding: 50px;
+  background-image: url("../images/gradient-bg-1.png");
+  background-size: 250%;
+  background-position: center;
   color: white;
+}
+
+section#invoice .ticket-card .card-graphic h1 {
+  font-size: 80px;
 }
 /*# sourceMappingURL=style.css.map */
