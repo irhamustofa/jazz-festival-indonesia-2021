@@ -47,16 +47,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#ticket">Ticket</a>
+                        <a class="nav-link active" aria-current="page" href="index.html#ticket">Ticket</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#lineup">Line-up</a>
+                        <a class="nav-link active" aria-current="page" href="index.html#lineup">Line-up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#gallery-content">Gallery</a>
+                        <a class="nav-link active" aria-current="page" href="index.html#gallery-content">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                        <a class="nav-link active" aria-current="page" href="index.html#contact">Contact</a>
                     </li>
                 </ul>
             </div>
